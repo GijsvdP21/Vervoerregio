@@ -1,25 +1,48 @@
 @media only screen and (min-width: 320px) and (max-width: 719px) {
     /* stijlregels voor browserschermen < 720px */
+
+    .alle-tekst {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px #b9005f;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
 
 
 @media only screen and (min-width: 720px) and (max-width: 1023px) {
     /* stijlregels voor browserschermen > 720px en < 1024px */
-}
 
+}
 
 @media only screen and (min-width:1024px) {
     /* stijlregels voor browserschermen ≥ 1024px */
-    
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Fira sans', Calibri, sans-serif;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 @font-face {
     font-family: 'Fira sans';
     src:
         url('firasans-regular.ttf') format('ttf');
-    }
+}
 
 
 .vervoerders {
@@ -36,7 +59,7 @@ body {
     margin-top: 1%;
     width: 10rem;
 }
-    
+
 .header {
     display: flex;
     flex-direction: column;
@@ -44,25 +67,28 @@ body {
     width: auto;
     align-items: center;
     margin: 0px;
+    font-size: 20px;
 }
 
 .introductie {
-    font-size: 10px;    
+    font-size: 10px;
 }
-    
+
 .header_title {
     font-size: 50px;
 }
-    
+
 .header_subtitle {
     font-size: 30px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 2rem 1fr 2fr 2rem;
-    grid-template-areas:
-    ". nav tekst .";
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "nav tekst";
+    margin-left: 5rem;
+    margin-right: 72rem;
+    gap: 24rem;
 }
 
 .sec-header {
@@ -73,12 +99,24 @@ main {
     grid-area: nav;
 }
 
+.inhoudsopgave {
+    position: sticky;
+    top: 5rem;
+}
+
 .side-nav ul {
-    width: 10rem;
+    width: 11rem;
     grid-area: nav;
     list-style: none;
     text-decoration: none;
     font-size: 25px;
+}
+
+.logo2 {
+    width: 20rem;
+    overflow: hidden;
+    height: 4rem;
+    object-fit: cover;
 }
 
 .side-nav-list {
@@ -89,6 +127,9 @@ main {
     font-size: 40px;
 }
 
+.side-nav-text:hover {
+    text-decoration: underline;
+}
 
 ul a[href] {
     text-decoration: none;
@@ -97,6 +138,7 @@ ul a[href] {
 
 .tekst {
     grid-area: tekst;
+    font-size: 20px;
 }
 
 .lijsten {
@@ -104,12 +146,30 @@ ul a[href] {
     flex-direction: column;
 }
 
-.afbeeldingen-tekst {
+.alle-tekst {
     display: flex;
     flex-direction: column;
     border: solid 1px #b9005f;
-    width: 30rem;
-    height: 3rem;
+    width: 35rem;
+    cursor: pointer;
 }
 
+summary {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+summary:hover,
+details[open] summary {
+    background-color: #b9005f;
+    color: white;
+}
+
+
+.inhoud-tekst {
+    background-color: white;
+    color: black;
+    margin: 1rem 1rem 1rem 1rem;
+    cursor: text;
 }
