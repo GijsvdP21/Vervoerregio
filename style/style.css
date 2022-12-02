@@ -113,10 +113,9 @@ main {
 }
 
 .logo2 {
-    width: 20rem;
-    overflow: hidden;
-    height: 4rem;
-    object-fit: cover;
+    width: 13rem;
+    left: -13px;
+    position: relative;
 }
 
 .side-nav-list {
