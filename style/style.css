@@ -172,3 +172,36 @@ details[open] summary {
     margin: 1rem 1rem 1rem 1rem;
     cursor: text;
 }
+
+#share-button {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 2rem;
+    width: fit-content;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+}
+
+#share-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b9005f;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#share-icon:hover {
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
+}
+
+#share-icon svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
