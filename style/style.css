@@ -11,7 +11,7 @@
     .alle-tekst {
         display: flex;
         flex-direction: column;
-        border: solid 1px #b9005f;
+        border: solid 1px var(--c-primair);
         width: 50%;
         cursor: pointer;
     }
@@ -139,7 +139,7 @@ main {
 
 ul a[href] {
     text-decoration: none;
-    color: #b9005f;
+    color: var(--c-primair);
 }
 
 .tekst {
@@ -155,7 +155,7 @@ ul a[href] {
 .alle-tekst {
     display: flex;
     flex-direction: column;
-    border: solid 1px #b9005f;
+    border: solid 1px var(--c-primair);
     width: 35rem;
     cursor: pointer;
 }
@@ -195,7 +195,7 @@ details[open] summary {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #b9005f;
+    background-color: var(--c-primair);
     width: 3rem;
     height: 3rem;
     padding: 1rem;
