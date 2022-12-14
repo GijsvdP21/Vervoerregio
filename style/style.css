@@ -1,3 +1,10 @@
+:root {
+    --c-primair: #b9005f;
+}
+
+
+
+
 @media only screen and (min-width: 320px) and (max-width: 719px) {
     /* stijlregels voor browserschermen < 720px */
 
@@ -88,7 +95,7 @@ main {
     grid-template-areas: "nav tekst";
     margin-left: 5rem;
     margin-right: 72rem;
-    gap: 24rem;
+    gap: 15rem;
 }
 
 .sec-header {
@@ -161,7 +168,7 @@ summary {
 
 summary:hover,
 details[open] summary {
-    background-color: #b9005f;
+    background-color: var(--c-primair);
     color: white;
 }
 
