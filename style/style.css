@@ -164,6 +164,28 @@ details[open] summary {
     align-items: center;
 }
 
+#back-to-top {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: fit-content;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+
+#back-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--c-primair);
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
 
 
 
