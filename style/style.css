@@ -29,13 +29,13 @@ h1 {
     object-fit: cover;
 }
 
-.logo {
+/* .logo {
     position: relative;
     display: block;
     margin-left: 4%;
     margin-top: 1%;
     width: 10rem;
-}
+} */
 
 .header {
     display: flex;
@@ -325,6 +325,16 @@ details[open] summary {
         position: fixed;
         right: 5%;
         bottom: 5%;
+    }
+
+    .logo {
+        position: absolute;
+        display: block;
+        left: 0;
+        padding: 0.8rem 2rem 1rem 1rem;
+        width: 20rem;
+        background-color: white;
+        border-radius: 0px 0px 5rem 0px;
     }
 
 }
