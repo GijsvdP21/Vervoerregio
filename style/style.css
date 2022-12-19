@@ -308,7 +308,7 @@ details[open] summary {
         grid-template-areas: "nav tekst";
         margin-left: 5rem;
         margin-right: 72rem;
-        column-gap: 15rem;
+        column-gap: 13rem;
         row-gap: 2rem;
     }
 
