@@ -25,7 +25,7 @@ h1 {
 .vervoerders {
     width: 100%;
     overflow: hidden;
-    height: 35rem;
+    height: 30rem;
     object-fit: cover;
 }
 
@@ -172,7 +172,6 @@ details[open] summary {
     width: fit-content;
     flex-direction: column;
     position: relative;
-    cursor: pointer;
 }
 
 #back-up {

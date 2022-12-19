@@ -4,3 +4,4 @@ document.querySelector("#share-button").addEventListener("click", function () {
         url: window.location.href
     });
 });
+
