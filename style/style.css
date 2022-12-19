@@ -308,7 +308,8 @@ details[open] summary {
         grid-template-areas: "nav tekst";
         margin-left: 5rem;
         margin-right: 72rem;
-        gap: 15rem;
+        column-gap: 15rem;
+        row-gap: 2rem;
     }
 
     #share-button {
