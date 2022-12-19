@@ -313,14 +313,18 @@ details[open] summary {
     }
 
     #share-button {
+        display: none;
+    }
+
+    #back-to-top {
         display: flex;
         gap: 1rem;
         align-items: center;
         font-size: 2rem;
         width: fit-content;
         position: fixed;
-        right: 10%;
-        bottom: 10%;
+        right: 5%;
+        bottom: 5%;
     }
 
 }
