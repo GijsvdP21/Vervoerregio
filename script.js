@@ -6,7 +6,7 @@ document.querySelector("#share-button").addEventListener("click", function () {
 });
 
 
-function search_animal() {
+function search_element() {
     let input = document.getElementById('searchbar').value
     input = input.toLowerCase();
     let x = document.getElementsByClassName('alle-tekst');
@@ -20,3 +20,5 @@ function search_animal() {
         }
     }
 }
+
+
