@@ -366,7 +366,7 @@ code {
     }
 
     #back-to-top {
-        display: flex;
+        display: none;
         gap: 1rem;
         align-items: center;
         font-size: 2rem;
