@@ -22,3 +22,11 @@ function search_element() {
 }
 
 
+let topButton = document.getElementById("back-to-top");
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    document.body.scrollTop > 250 || document.documentElement.scrollTop > 250 ? topButton.style.display = "flex" : topButton.style.display = "none";
+};
+

@@ -174,7 +174,7 @@ details[open] summary {
     position: relative;
 }
 
-#back-up {
+.back-up {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,6 +185,32 @@ details[open] summary {
     border-radius: 50%;
 }
 
+li code:not([class*=language-]),
+p code:not([class*=language-]) {
+    display: inline-block;
+    padding: 0 0.25rem;
+    margin: 0 0.25rem;
+    border: 1px solid #494f55;
+    background: #f6f8f9;
+    border-radius: 3px;
+}
+
+code {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+
+.searchbar {
+    border: 3px solid #b9005f;
+    border-radius: 5%;
+    width: 10rem;
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
 
 
 
@@ -281,8 +307,8 @@ details[open] summary {
     }
 }
 
-@media only screen and (min-width: 930px) and (max-width: 1149px) {
-    /* stijlregels voor browserschermen > 930px en < 1149px */
+@media only screen and (min-width: 930px) and (max-width: 1314px) {
+    /* stijlregels voor browserschermen > 930px en < 1315px */
 
     .vervoerders {
         width: 100%;
@@ -298,8 +324,8 @@ details[open] summary {
 
 }
 
-@media only screen and (min-width:1150px) {
-    /* stijlregels voor browserschermen ≥ 1024px */
+@media only screen and (min-width:1315px) {
+    /* stijlregels voor browserschermen ≥ 1315px */
 
 
     main {
@@ -308,7 +334,7 @@ details[open] summary {
         grid-template-areas: "nav tekst";
         margin-left: 5rem;
         margin-right: 72rem;
-        column-gap: 13rem;
+        column-gap: 65%;
         row-gap: 2rem;
     }
 
