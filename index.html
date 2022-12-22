@@ -103,13 +103,7 @@
               paginatitel maakt het voor iedereen makkelijker om te navigeren door de website. Paginatitels worden
               getoond in het venster van de browser of in het tabblad van de pagina. Met een goede paginatitel kunnen
               bezoekers de pagina gemakkelijk terugvinden als er bijvoorbeeld meerdere tabbladen open staan.</p>
-
-
-
             <p>Goede paginatitels:</p>
-
-
-
             <ul>
               <li>beschrijven duidelijk het onderwerp of doel van de pagina.</li>
               <li>veranderen als een nieuwe pagina wordt ingeladen.</li>
@@ -118,59 +112,68 @@
               <li>zijn beknopt.</li>
               <li>zijn uniek.</li>
             </ul>
-
-
-
             <p>Paginatitels worden door hulptechnologieën gebruikt om de webpagina aan te duiden. Deze informatie wordt
               als eerst gepresenteerd bij het openen van een pagina.</p>
-
-
-
             <p>Gebruik het <code>title</code>-element in het <code>&lt;head&gt;</code>-element in de code van de pagina.
               Beschrijf in dit element het onderwerp of doel van de pagina.</p>
-
-
-
             <p>In de code ziet dat er zo uit:</p>
-
-
-
-            <div class="awp__code-block">
-              <pre class="line-numbers language-html" tabindex='0'>
-                    <code class="language-html">
-                      <script type="text/plain" class="language-html">
-                        <html lang="nl">
-              <head>
-                <title>WCAG.nl - Digitale toegankelijkheid voor iedereen</title>
-                ...
-              </head>
-            ...
-            </html>
-                      </script>
-                    </code>
-                  </pre>
-            </div>
-
-
+            <pre>
+              <code>
+  &lt;html lang=&quot;nl&quot;&gt; 
+&lt;head&gt; 
+&lt;title&gt;WCAG.nl - Digitale toegankelijkheid voor iedereen&lt;/title&gt; 
+... 
+&lt;/head&gt;
+... 
+&lt;/html&gt;
+              </code>
+            </pre>
           </div>
         </details>
         <details class="teksten-tekst alle-tekst">
           <summary>Gebruik koppen die het onderwerp of doel van de onderliggende tekst beschrijven</summary>
-          <div id="inside">De koppen op een webpagina moeten het onderwerp of doel van de onderliggende tekst
-            beschrijven. Zorg dat elke kop iets zegt over de tekst die eronder staat. Een beschrijvende kop maakt het
-            voor iedereen makkelijker om informatie op een pagina te vinden. Alle koppen samen horen een goed beeld te
-            geven van de inhoud van de webpagina. Zo kunnen bezoekers snel de structuur van een webpagina of tekst
-            herkennen.
-            <br> <br>
-            Een kop moet altijd onderliggende inhoud hebben.
-            <br> <br>
-            Bezoekers die gebruik maken van een schermlezer kunnen een lijst van alle koppen gebruiken om over de
-            webpagina te navigeren. Zij kunnen eventueel ook gelijk springen naar de volgende kop.
+          <div id="inside">
+            <p>De koppen op een webpagina moeten het onderwerp of doel van de onderliggende tekst
+              beschrijven. Zorg dat elke kop iets zegt over de tekst die eronder staat. Een beschrijvende kop maakt het
+              voor iedereen makkelijker om informatie op een pagina te vinden. Alle koppen samen horen een goed beeld te
+              geven van de inhoud van de webpagina. Zo kunnen bezoekers snel de structuur van een webpagina of tekst
+              herkennen.</p>
+            <p>Een kop moet altijd onderliggende inhoud hebben.</p>
+            <p>Bezoekers die gebruik maken van een schermlezer kunnen een lijst van alle koppen gebruiken om over de
+              webpagina te navigeren. Zij kunnen eventueel ook gelijk springen naar de volgende kop.</p>
           </div>
         </details>
         <details class="teksten-tekst alle-tekst">
           <summary>Zorg dat koppen zijn opgemaakt met een kop-element</summary>
-          <div id="inside">ik hou van eten</div>
+          <div id="inside">
+            <p>Door goede beschrijvende koppen te gebruiken kunnen bezoekers snel de structuur in een tekst herkennen.
+              Een koptekst heeft vaak een afwijkende vormgeving, het wordt bijvoorbeeld groter en dikgedrukt
+              weergegeven. Dat maakt het makkelijk om de structuur van de pagina te scannen.</p>
+            <p>Structuur die alleen wordt overgebracht met vormgeving kan door bezoekers die blind of slechtziend zijn
+              niet (of niet goed) worden waargenomen. Voor deze bezoekers is het belangrijk om structuur ook in de code
+              vast te leggen. Zo kan software de structuur en relaties op de webpagina ook bepalen.</p>
+            <p>Bezoekers die gebruik maken van een schermlezer kunnen een lijst van alle koppen gebruiken om over de
+              pagina te navigeren. Zij kunnen eventueel ook gelijk springen naar de volgende kop.</p>
+            <p>Zorg dat koppen worden opgemaakt met een HTML kop-element (<code>&lt;h1&gt;</code> t/m
+              <code>&lt;h6&gt;</code>).
+            </p>
+            <!-- awp callout -->
+            <div class="awp__callout type-warning">
+              <span class="awp__icon callout__icon fas fa-exclamation-triangle callout__icon"></span>
+              <div class="callout__description">
+                <p>Let op: Teksten die géén kop zijn, mogen niet worden opgemaakt met een HTML kop-element.</p>
+              </div>
+            </div>
+            <!-- /awp callout -->
+            <p>Zorg ook dat de volgorde van de koppen en tussenkoppen logisch is. Een paar vuistregels zijn:</p>
+            <ul>
+              <li>De eerste kop op de pagina hoort een kop van het eerste niveau te zijn.</li>
+              <li>Na een kop van het eerste niveau hoort een kop van het tweede niveau te volgen.</li>
+              <li>Na een kop van het tweede niveau hoort opnieuw een kop van het tweede niveau volgen óf een kop van het
+                derde niveau.</li>
+              <li>Kopniveaus horen niet te worden overgeslagen.</li>
+            </ul>
+          </div>
         </details>
         <details class="teksten-tekst alle-tekst">
           <summary>Zorg dat lijsten zijn opgemaakt met een lijst-element</summary>
