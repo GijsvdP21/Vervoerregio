@@ -115,12 +115,20 @@ ul a[href] {
     flex-direction: column;
 }
 
+.lijsten[hidden] {
+    display: none;
+}
+
 .alle-tekst {
     display: flex;
     flex-direction: column;
     border: solid 1px var(--c-primair);
     width: 35rem;
     cursor: pointer;
+}
+
+.alle-tekst[hidden] {
+    display: none;
 }
 
 summary {
@@ -423,7 +431,8 @@ pre code {
     pre code {
         padding: 10px;
         width: 31rem;
-        font-size: 14px;
+        font-size: 16px;
+        overflow-y: hidden;
     }
 
 }

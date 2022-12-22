@@ -80,8 +80,7 @@
               <a href="#afbeeldingen">Afbeeldingen</a>
             </li>
             <li class="side-nav-text">
-              <input id="searchbar" class="searchbar" onkeyup="search_element()" type="text" name="search"
-                placeholder="zoek..">
+              <input id="searchbar" class="searchbar" type="text" name="search" placeholder="zoek..">
             </li>
           </ul>
         </nav>
@@ -173,15 +172,129 @@
                 derde niveau.</li>
               <li>Kopniveaus horen niet te worden overgeslagen.</li>
             </ul>
+            <pre>
+              <code>
+&lt;h1&gt;Kop van het eerste niveau&lt;/h1&gt; 
+&lt;h2&gt;Tussenkop van het tweede niveau&lt;/h2&gt; 
+&lt;p&gt;...&lt;/p&gt; 
+&lt;h2&gt;Tussenkop van het tweede niveau&lt;/h2&gt; 
+&lt;p&gt;...&lt;/p&gt; 
+
+&lt;h2&gt;Tussenkop van het tweede niveau&lt;/h2&gt; 
+&lt;p&gt;...&lt;/p&gt; 
+&lt;h3&gt;Tussenkop van het derde niveau&lt;/h3&gt; 
+&lt;p&gt;...&lt;/p&gt;
+              </code>
+            </pre>
           </div>
         </details>
         <details class="teksten-tekst alle-tekst">
           <summary>Zorg dat lijsten zijn opgemaakt met een lijst-element</summary>
-          <div id="inside">ik hou van eten</div>
+          <div id="inside">
+            <p>Lijsten benadrukken belangrijke punten in een tekst. Een lijst heeft vaak een afwijkende vormgeving,
+              onderdelen van een lijst worden opgemaakt met een opsommingsteken of met een nummer.</p>
+            <p>Structuur die alleen wordt overgebracht met vormgeving kan door bezoekers die blind of slechtziend zijn
+              niet (of niet goed) worden waargenomen. Voor deze bezoekers is het belangrijk om structuur ook in de code
+              vast te leggen. Zo kan software de structuur en relaties op de webpagina ook bepalen.</p>
+            <p>Bezoekers die gebruik maken van een schermlezer kunnen makkelijker door een lijst navigeren. Schermlezers
+              geven bijvoorbeeld aan hoeveel onderdelen er in de lijst staan en bieden de mogelijkheid om de lijst
+              gelijk over te slaan.</p>
+            <p>Zorg dat lijsten worden opgemaakt met een lijst-element. Er zijn verschillende soorten lijsten: een
+              opsomming (<code>&lt;ul&gt;</code>), een genummerde lijst (<code>&lt;ol&gt;</code>) en een lijst met
+              beschrijvingen (<code>&lt;dl&gt;</code>).</p>
+            <h4 id="Opsomming">Opsomming</h4>
+            <p>Onderdelen in een opsomming worden voorafgegaan door een opsommingsteken zoals een bolletje of een
+              streepje. Gebruik opsommingen als de volgorde van de onderdelen in de lijst niet belangrijk is.</p>
+            <p>In de code ziet dat er zo uit:</p>
+            <pre>
+              <code>
+&lt;ul&gt; 
+  &lt;li&gt;Eerste onderdeel van een opsomming&lt;/li&gt; 
+  &lt;li&gt;Tweede onderdeel van een opsomming&lt;/li&gt; 
+  ... 
+&lt;/ul&gt;
+              </code>
+            </pre>
+            <h4 id="Genummerde-lijst">Genummerde lijst</h4>
+            <p>Onderdelen in een genummerde lijst worden voorafgegaan door een nummer. Gebruik genummerde lijsten als de
+              volgorde van onderdelen in de lijst wél belangrijk is.</p>
+            <p>In de code ziet dat er zo uit:</p>
+            <pre>
+              <code>
+&lt;ol&gt; 
+  &lt;li&gt;Eerste onderdeel van een genummerde lijst&lt;/li&gt;
+  &lt;li&gt;Tweede onderdeel van een genummerde lijst&lt;/li&gt; 
+  ... 
+&lt;/ol&gt;
+              </code>
+            </pre>
+            <h4 id="Definitielijst">Lijst met beschrijvingen</h4>
+            <p>Gebruik een lijst met beschrijvingen bij lijsten die bestaan uit een naam, term of begrip met een
+              beschrijving die daar bij hoort. Gebruik deze lijsten bijvoorbeeld voor een verklarende woordenlijst.
+              Binnen een lijst met beschrijvingen wordt het <code>&lt;dt&gt;</code>-element gebruikt om een term aan te
+              geven en wordt het <code>&lt;dd&gt;</code>-element om de beschrijving aan te geven.</p>
+            <p>In de code ziet dat er zo uit:</p>
+            <pre>
+              <code>
+&lt;dl&gt; 
+  &lt;dt&gt;conformiteit&lt;/dt&gt; 
+  &lt;dd&gt;voldoen aan alle eisen van een gegeven standaard, richtlijn of specificatie&lt;/dd&gt; 
+  &lt;dt&gt;content (webcontent)&lt;/dt&gt; 
+  &lt;dd&gt;informatie en zintuiglijke ervaring die aan de gebruiker doorgegeven wordt door middel van een user agent, met inbegrip van code of opmaak die de structuur, presentatie en interacties van de content definieert&lt;/dd&gt; 
+&lt;/dl&gt;
+              </code>
+            </pre>
+            <!-- awp callout -->
+            <div class="awp__callout type-warning">
+              <span class="awp__icon callout__icon fas fa-exclamation-triangle callout__icon"></span>
+              <div class="callout__description">
+                <p>Let op: Een lijst met beschrijvingen wordt vaak nog niet ondersteund.</p>
+              </div>
+            </div>
+            <!-- /awp callout -->
+          </div>
         </details>
         <details class="teksten-tekst alle-tekst">
           <summary>Zorg dat tabellen zijn opgemaakt met een tabel-element</summary>
-          <div id="inside">ik hou van eten</div>
+          <div id="inside">
+            <p>Tabellen bestaan uit rijen en kolommen. De gegevens in de rijen en kolommen hebben een onderlinge relatie
+              met elkaar. Voor bezoekers met een visuele beperking is deze relatie niet direct duidelijk. Voor deze
+              bezoekers is het belangrijk dat deze relaties ook in de code wordt vastgelegd.</p>
+            <p>Structuur en relaties die alleen worden overgebracht met vormgeving kan door bezoekers die blind of
+              slechtziend zijn niet (of niet goed) worden waargenomen. Voor deze bezoekers is het belangrijk om
+              structuur ook in de code vast te leggen. Zo kan software de structuur en relaties op de webpagina ook
+              bepalen.</p>
+            <p>Bezoekers die gebruik maken van een schermlezer kunnen makkelijker door een lijst navigeren. Schermlezers
+              geven bijvoorbeeld aan hoeveel onderdelen er in de lijst staan en bieden de mogelijkheid om de lijst
+              gelijk over te slaan.</p>
+            <p>Zorg dat lijsten worden opgemaakt met een tabel-element (<code>&lt;table></code>). In dit element moet
+              ook worden aangegeven wat een tabelkop is en wat de gegevenscellen zijn. De tabelkoppen worden in de code
+              vastgelegd met een <code>&lt;th></code>-element, gegevenscellen met een <code>&lt;td></code>-element.</p>
+            <p>In de code ziet dat er zo uit:</p>
+            <pre>
+              <code>
+&lt;table&gt; 
+              &lt;tr&gt; 
+    &lt;th&gt;Kop van de eerste kolom&lt;/th&gt; 
+    &lt;th&gt;Kop van de tweede kolom&lt;/th&gt; 
+    &lt;th&gt;Kop van de derde kolom&lt;/th&gt; 
+  &lt;/tr&gt; 
+  &lt;tr&gt; 
+    &lt;td&gt;Gegevens in de eerste kolom&lt;/td&gt; 
+    &lt;td&gt;Gegevens in de tweede kolom&lt;/td&gt; 
+    &lt;td&gt;Gegevens in de derde kolom&lt;/td&gt; 
+  &lt;/tr&gt; 
+  ... 
+&lt;/table&gt;
+              </code>
+            </pre>
+            <p>Geef de tabel ook een korte beschrijving. Deze beschrijving wordt in de code vastgelegd met een
+              <code>&lt;caption></code>-element. Een goede beschrijving helpt bezoekers om een tabel te vinden en te
+              begrijpen waar de tabel over gaat.
+            </p>
+            <p>In de code ziet dat er zo uit:</p>
+
+          </div>
         </details>
         <details class="teksten-tekst alle-tekst">
           <summary>Geef links een linktekst die het doel van de link beschrijft</summary>

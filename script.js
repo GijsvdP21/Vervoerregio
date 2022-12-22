@@ -5,21 +5,30 @@ document.querySelector("#share-button").addEventListener("click", function () {
     });
 });
 
-
-function search_element() {
-    let input = document.getElementById('searchbar').value
+document.querySelector("#searchbar").addEventListener("input", function () {
+    let input = this.value
     input = input.toLowerCase();
-    let x = document.getElementsByClassName('alle-tekst');
 
+    let x = document.getElementsByClassName('alle-tekst');
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
+            x[i].hidden = true;
         }
         else {
-            x[i].style.display = "block";
+            x[i].hidden = false;
         }
     }
-}
+
+    let lijsten = document.getElementsByClassName('lijsten')
+    for (i = 0; i < lijsten.length; i++) {
+        if (lijsten[i].querySelector('details:not([hidden])')) {
+            lijsten[i].hidden = false;
+        }
+        else {
+            lijsten[i].hidden = true;
+        }
+    }
+})
 
 
 let topButton = document.getElementById("back-to-top");
