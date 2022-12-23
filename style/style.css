@@ -310,7 +310,7 @@ pre code {
         background-color: #46BECD;
         margin-top: 3rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #back-to-top {
