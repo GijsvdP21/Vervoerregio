@@ -92,9 +92,20 @@
     <section class="tekst">
       <div id="teksten" class="lijsten">
         <h2>Teksten</h2>
-        <p class="intro-tekst">Afbeeldingen zijn een veel voorkomend onderdeel van de meeste websites. Help ervoor te
-          zorgen dat iedereen
-          ervan kan genieten.</p>
+        <div class="intro-tekst">
+          <p class="intro-inhoud">Tekst is de meest toegankelijke vorm van digitale informatie. Tekst kan namelijk door
+            hulptechnologieën op verschillende manieren worden gepresenteerd. Voorleessoftware kan een tekst
+            bijvoorbeeld
+            omzetten in spraak (auditief) en een brailleleesregel kan het vertalen naar braille (tactiel).</p>
+          <p class="intro-inhoud">Een duidelijke structuur is belangrijk voor de toegankelijkheid van een tekst. Voor
+            structuur worden
+            elementen
+            gebruikt zoals koppen, tussenkoppen en opsommingen. Deze structuur moet ook goed in de code worden
+            vastgelegd.
+            Daarnaast moet de inhoud begrijpelijk zijn en in een logische volgorde aan bezoekers wordt gepresenteerd.
+            Ook
+            dit moet allemaal op de juiste manier in de code worden aangegeven.</p>
+        </div>
         <details class="teksten-tekst alle-tekst">
           <summary>Geef webpagina's een titel die het onderwerp of doel van de pagina beschrijft</summary>
           <div id="inside">
@@ -202,7 +213,7 @@
             <p>Zorg dat lijsten worden opgemaakt met een lijst-element. Er zijn verschillende soorten lijsten: een
               opsomming (<code>&lt;ul&gt;</code>), een genummerde lijst (<code>&lt;ol&gt;</code>) en een lijst met
               beschrijvingen (<code>&lt;dl&gt;</code>).</p>
-            <h4 id="Opsomming">Opsomming</h4>
+            <h3 id="Opsomming">Opsomming</h3>
             <p>Onderdelen in een opsomming worden voorafgegaan door een opsommingsteken zoals een bolletje of een
               streepje. Gebruik opsommingen als de volgorde van de onderdelen in de lijst niet belangrijk is.</p>
             <p>In de code ziet dat er zo uit:</p>
@@ -215,7 +226,7 @@
 &lt;/ul&gt;
               </code>
             </pre>
-            <h4 id="Genummerde-lijst">Genummerde lijst</h4>
+            <h3 id="Genummerde-lijst">Genummerde lijst</h3>
             <p>Onderdelen in een genummerde lijst worden voorafgegaan door een nummer. Gebruik genummerde lijsten als de
               volgorde van onderdelen in de lijst wél belangrijk is.</p>
             <p>In de code ziet dat er zo uit:</p>
@@ -228,7 +239,7 @@
 &lt;/ol&gt;
               </code>
             </pre>
-            <h4 id="Definitielijst">Lijst met beschrijvingen</h4>
+            <h3 id="Definitielijst">Lijst met beschrijvingen</h3>
             <p>Gebruik een lijst met beschrijvingen bij lijsten die bestaan uit een naam, term of begrip met een
               beschrijving die daar bij hoort. Gebruik deze lijsten bijvoorbeeld voor een verklarende woordenlijst.
               Binnen een lijst met beschrijvingen wordt het <code>&lt;dt&gt;</code>-element gebruikt om een term aan te
@@ -536,7 +547,7 @@
 
     <section class="footer-tel">
       <section id="back-to-top">
-        <a href="#logo">
+        <a href="#logo" aria-label="knop om terug naar boven te gaan">
           <div class="back-up">
             <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15 20H9V12H4.16L12 4.16L19.84 12H15V20Z" fill="white" />
